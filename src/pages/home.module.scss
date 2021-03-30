@@ -1,0 +1,66 @@
+.posts {
+  max-width: 720px;
+  margin: 2rem auto 0;
+
+  a {
+      display: block;
+
+      & + a {
+          margin-top: 1rem;
+          padding-top: 1rem;
+      }
+
+      strong {
+          display: block;
+          font-size: 1.5rem;
+          margin-top: 1rem;
+          line-height: 2rem;
+
+          transition: color 0.2s;
+      }
+
+      p {
+          color: var(--gray-100);
+          margin-top: 0.5rem;
+          line-height: 1.625rem;
+      }
+
+      &:hover strong {
+          color: var(--pink-500);
+      }
+
+      .postInfo {
+        margin-top: 1rem;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+
+        p {
+          display: flex;
+          align-items: center;
+          color: var(--gray-200);
+
+          svg {
+            font-size: 1.25rem;
+            margin-right: 0.50rem;
+          }
+
+          & + p {
+            margin-left: 1.25rem;
+          }
+        }
+      }
+  }
+}
+
+.morePosts {
+  margin-top: 5rem;
+  background: none;
+  border: none;
+  color: var(--pink-500);
+
+  &:hover {
+    text-decoration: underline;
+  }
+
+}
