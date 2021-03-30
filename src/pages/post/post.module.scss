@@ -34,6 +34,17 @@
         margin-left: 1.25rem;
       }
     }
+
+  }
+
+  .lastUpdate {
+    margin-top: 1rem;
+
+    p {
+      align-items: left;
+      color: var(--gray-200);
+      font-style: italic;
+    }
   }
 
   .postContent {
@@ -61,4 +72,35 @@
     }
 
   }
+}
+
+.postPaginate {
+  display: flex;
+  justify-content: space-between;
+
+  border-top: 1px solid var(--gray-800);
+
+  div {
+
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+
+    p {
+      font-size: 1rem;
+    }
+
+    a {
+      color: var(--pink-500);
+
+      &:hover {
+        text-decoration: underline;
+      }
+
+    }
+
+    & + div {
+      text-align: right;
+    }
+  }
+
 }

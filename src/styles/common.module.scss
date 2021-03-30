@@ -3,3 +3,21 @@
   margin: 0 auto;
   padding: 0 2rem;
 }
+
+
+.previewContainer {
+  width: 100%;
+  background: var(--gray-50);
+  color: var(--gray-900);
+  border-radius: 4px;
+  padding: 1.25rem;
+  text-align: center;
+  margin-top: 5rem;
+
+  a {
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
+}
